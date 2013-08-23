@@ -33,26 +33,26 @@ public class MapBuilderProxy extends KrollProxy {
 	}
 
 	@Kroll.method
-	public MapBuilderProxy createEvent(String category, String action, String label, Long value) {
+	public MapBuilderProxy createEvent(String category, String action, @Kroll.argument(optional = true) String label, @Kroll.argument(optional = true) Long value) {
 		_mb = MapBuilder.createEvent(category, action, label, value);
 		return this;
 	}
 
 	@Kroll.method
-	public MapBuilderProxy createException(String exceptionDescription, Boolean fatal) {
+	public MapBuilderProxy createException(String exceptionDescription, @Kroll.argument(optional = true) Boolean fatal) {
 		_mb = MapBuilder.createException(exceptionDescription, fatal);
 		return this;
 	}
 
 	@Kroll.method
-	public MapBuilderProxy createItem(String transactionId, String name, String sku, String category, Double price,
-			Long quantity, String currencyCode) {
+	public MapBuilderProxy createItem(String transactionId, String name, @Kroll.argument(optional = true) String sku, @Kroll.argument(optional = true) String category, @Kroll.argument(optional = true) Double price,
+			@Kroll.argument(optional = true) Long quantity, @Kroll.argument(optional = true) String currencyCode) {
 		_mb = MapBuilder.createItem(transactionId, name, sku, category, price, quantity, currencyCode);
 		return this;
 	}
 
 	@Kroll.method
-	public MapBuilderProxy createSocial(String network, String action, String target) {
+	public MapBuilderProxy createSocial(String network, String action, @Kroll.argument(optional = true) String target) {
 		_mb = MapBuilder.createSocial(network, action, target);
 		return this;
 	}
@@ -64,8 +64,8 @@ public class MapBuilderProxy extends KrollProxy {
 	}
 
 	@Kroll.method
-	public MapBuilderProxy createTransaction(String transactionId, String affiliation, Double revenue, Double tax,
-			Double shipping, String currencyCode) {
+	public MapBuilderProxy createTransaction(String transactionId, @Kroll.argument(optional = true) String affiliation, @Kroll.argument(optional = true) Double revenue, @Kroll.argument(optional = true) Double tax,
+			@Kroll.argument(optional = true) Double shipping, @Kroll.argument(optional = true) String currencyCode) {
 		_mb = MapBuilder.createTransaction(transactionId, affiliation, revenue, tax, shipping, currencyCode);
 		return this;
 	}

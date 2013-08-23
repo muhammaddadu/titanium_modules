@@ -20,6 +20,16 @@ understand how to use this module, and how to collect the analytics data that yo
 [iOS SDK Guide](https://developers.google.com/analytics/devguides/collection/ios/v3/)
 
 
+## A Warning About Tracking IDs
+Google Analytics Website Tracking IDs will NOT work with this module (because they don't work with the underlying Google SDK).
+Instead, you must generate new App specific Tracking IDs:
+ - Go to analytics.google.com.
+ - Sign in.
+ - Go to Admin > Accounts > Create New Account.
+ - Choose "App" beside "What would you like to track?"
+ - Create the account, and get the tracking ID.
+ 
+
 ## Reference
 
 ### [Tracker](tracker.html) getTracker([String trackingName, ] String trackingId)

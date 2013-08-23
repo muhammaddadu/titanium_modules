@@ -13,6 +13,7 @@
 -(id)initWithTracker:(id<GAITracker>)t
 {
     if (self = [super init]) {
+        // DToth: GAI.h tells us not to retain/release the tracker, so we won't.
         tracker = t;
     }
     return self;
@@ -31,13 +32,13 @@
     return tracker.name;
 }
 
--(id)send:(id)args
+-(void)send:(id)args
 {
     ENSURE_SINGLE_ARG(args, NSDictionary);
     [tracker send:args];
 }
 
--(id)set:(id)args
+-(void)set:(id)args
 {
     NSString *key;
     NSString *value;
@@ -45,6 +46,13 @@
     ENSURE_ARG_AT_INDEX(key, args, 0, NSString);
     ENSURE_ARG_AT_INDEX(value, args, 1, NSString);
     [tracker set:key value:value];
+}
+
+-(void)dealloc
+{
+    // DToth: GAI.h tells us not to retain/release the tracker, so we won't.
+    tracker = nil;
+	[super dealloc];
 }
 
 @end

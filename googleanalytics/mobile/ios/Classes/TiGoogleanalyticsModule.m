@@ -55,7 +55,7 @@
 
 #pragma mark Public APIs
 
--(id)closeTracker:(id)trackingId
+-(void)closeTracker:(id)trackingId
 {
     ENSURE_SINGLE_ARG(trackingId, NSString);
     [[GAI sharedInstance] removeTrackerByName:trackingId];

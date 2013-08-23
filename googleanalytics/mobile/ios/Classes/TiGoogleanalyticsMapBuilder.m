@@ -125,9 +125,7 @@
 }
 
 -(id)build:(id)args {
-    NSDictionary *retVal = [db build];
-    //RELEASE_TO_NIL(db);
-    return retVal;
+    return [db build];
 }
 
 -(id)get:(id)paramName {

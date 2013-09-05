@@ -21,6 +21,10 @@ public class TrackerProxy extends KrollProxy {
 	public TrackerProxy(Tracker tracker) {
 		_t = tracker;
 	}
+	
+	public Tracker getTracker() {
+		return _t;
+	}
 
 	@Kroll.method
 	public String get(String key) {

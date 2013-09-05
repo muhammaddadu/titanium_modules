@@ -34,8 +34,8 @@ public class GoogleanalyticsModule extends KrollModule {
 
 	@Kroll.method
 	@Kroll.setProperty
-	public void setDefaultTracker(Tracker tracker) {
-		instance().setDefaultTracker(tracker);
+	public void setDefaultTracker(TrackerProxy tracker) {
+		instance().setDefaultTracker(tracker.getTracker());
 	}
 
 	@Kroll.method

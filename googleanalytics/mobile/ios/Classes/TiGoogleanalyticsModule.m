@@ -29,13 +29,13 @@
 
 -(void)startup
 {
-	[super startup];
+    [super startup];
     
     // Optional: automatically send uncaught exceptions to Google Analytics.
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     
     // Optional: set Logger to VERBOSE for debug information.
-    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    // [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
 }
 
 -(void)shutdown:(id)sender

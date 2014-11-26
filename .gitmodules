@@ -1,0 +1,3 @@
+[submodule "urlSession/ios/xcode/hyperloop"]
+	path = urlSession/ios/xcode/hyperloop
+	url = https://github.com/appcelerator/hyperloop.git

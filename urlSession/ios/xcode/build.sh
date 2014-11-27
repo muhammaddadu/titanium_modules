@@ -39,3 +39,4 @@ for arch in armv7 arm64 i386 x86_64; do
 done
 
 echo_and_eval "xcrun -sdk iphoneos lipo -info ${library_path_lipo}"
+echo_and_eval "mv ${library_path_lipo} ${build_dir}/libcom.appcelerator.${project_name}.a"

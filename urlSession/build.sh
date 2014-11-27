@@ -12,7 +12,7 @@
 # e.g. build/urlSession-iphone-1.1.0.zip
 
 declare -r build_dir="build"
-declare -r module_name="urlSession"
+declare -r module_name="com.appcelerator.urlSession"
 declare -r module_version="1.1.0"
 declare -r library_name="lib${module_name}.a"
 declare -r library_path="ios/xcode/build/${library_name}"

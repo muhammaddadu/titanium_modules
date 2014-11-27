@@ -12,7 +12,6 @@
 		C9BD15741A26858800495F42 /* com_appcelerator_urlSession_app_sm.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BD137B1A26858800495F42 /* com_appcelerator_urlSession_app_sm.m */; };
 		C9BD15751A26858800495F42 /* com_appcelerator_urlSession_converters.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BD137D1A26858800495F42 /* com_appcelerator_urlSession_converters.m */; };
 		C9BD15761A26858800495F42 /* ComAppceleratorUrlSessionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BD137F1A26858800495F42 /* ComAppceleratorUrlSessionModule.m */; };
-		C9BD15771A26858800495F42 /* ComAppceleratorUrlSessionModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BD13811A26858800495F42 /* ComAppceleratorUrlSessionModuleAssets.m */; };
 		C9BD15781A26858800495F42 /* js_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BD13831A26858800495F42 /* js_Class.m */; };
 		C9BD15791A26858800495F42 /* js_const_void_P.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BD13851A26858800495F42 /* js_const_void_P.m */; };
 		C9BD157A1A26858800495F42 /* js_CFRunLoopRef.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BD13881A26858800495F42 /* js_CFRunLoopRef.m */; };
@@ -298,8 +297,6 @@
 		C9BD137D1A26858800495F42 /* com_appcelerator_urlSession_converters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = com_appcelerator_urlSession_converters.m; sourceTree = "<group>"; };
 		C9BD137E1A26858800495F42 /* ComAppceleratorUrlSessionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComAppceleratorUrlSessionModule.h; sourceTree = "<group>"; };
 		C9BD137F1A26858800495F42 /* ComAppceleratorUrlSessionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComAppceleratorUrlSessionModule.m; sourceTree = "<group>"; };
-		C9BD13801A26858800495F42 /* ComAppceleratorUrlSessionModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComAppceleratorUrlSessionModuleAssets.h; sourceTree = "<group>"; };
-		C9BD13811A26858800495F42 /* ComAppceleratorUrlSessionModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComAppceleratorUrlSessionModuleAssets.m; sourceTree = "<group>"; };
 		C9BD13821A26858800495F42 /* js_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = js_Class.h; sourceTree = "<group>"; };
 		C9BD13831A26858800495F42 /* js_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = js_Class.m; sourceTree = "<group>"; };
 		C9BD13841A26858800495F42 /* js_const_void_P.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = js_const_void_P.h; sourceTree = "<group>"; };
@@ -836,8 +833,6 @@
 				C9BD137D1A26858800495F42 /* com_appcelerator_urlSession_converters.m */,
 				C9BD137E1A26858800495F42 /* ComAppceleratorUrlSessionModule.h */,
 				C9BD137F1A26858800495F42 /* ComAppceleratorUrlSessionModule.m */,
-				C9BD13801A26858800495F42 /* ComAppceleratorUrlSessionModuleAssets.h */,
-				C9BD13811A26858800495F42 /* ComAppceleratorUrlSessionModuleAssets.m */,
 				C9BD13821A26858800495F42 /* js_Class.h */,
 				C9BD13831A26858800495F42 /* js_Class.m */,
 				C9BD13841A26858800495F42 /* js_const_void_P.h */,
@@ -1594,7 +1589,6 @@
 				C9BD15E61A26858800495F42 /* js_MPMoviePlayerController_P.m in Sources */,
 				C9BD15F21A26858800495F42 /* js_SecTrustRef.m in Sources */,
 				C9BD15AD1A26858800495F42 /* js_NSKeyedArchiver_P.m in Sources */,
-				C9BD15771A26858800495F42 /* ComAppceleratorUrlSessionModuleAssets.m in Sources */,
 				C9BD15CC1A26858800495F42 /* js_NSSet_P.m in Sources */,
 				C9BD15E41A26858800495F42 /* js_MPMovieAccessLog_P.m in Sources */,
 				C9BD16161A26858800495F42 /* js_NSObject_NSTextLayoutOrientationProvider__P.m in Sources */,

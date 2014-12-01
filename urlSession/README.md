@@ -8,7 +8,11 @@ urlSession
 Create an environment variable `TI_ROOT` that points to the root of your titanium_mobile repo and then run `build.sh`. For example
 
 ```bash
-export TI_ROOT=/Users/matt/Documents/Appcelerator/src/Appcelerator/titanium_mobile
+git checkout https://github.com/appcelerator/titanium_modules.git
+pushd titanium_modules/urlSession
+git submodule init
+git submodule update
+export TI_ROOT=/Users/matt/Documents/Appcelerator/src/Appcelerator
 ./build.sh
 ```
 

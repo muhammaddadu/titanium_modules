@@ -287,7 +287,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C9BAC1A31A2CFA81008C6C8A /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = titanium.xcconfig; path = ../titanium.xcconfig; sourceTree = "<group>"; };
+		C9BAC1A91A2D1ACB008C6C8A /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = titanium.xcconfig; path = hyperloop/lib/ios/jsc/templates/source/xcode/titanium.xcconfig; sourceTree = "<group>"; };
 		C9BD135C1A26827800495F42 /* liburlSession.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liburlSession.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BD13771A26858800495F42 /* com_appcelerator_urlSession__source_map.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = com_appcelerator_urlSession__source_map.js; sourceTree = "<group>"; };
 		C9BD13781A26858800495F42 /* com_appcelerator_urlSession__source_map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = com_appcelerator_urlSession__source_map.m; sourceTree = "<group>"; };
@@ -800,7 +800,7 @@
 		C9BD13531A26827800495F42 = {
 			isa = PBXGroup;
 			children = (
-				C9BAC1A31A2CFA81008C6C8A /* titanium.xcconfig */,
+				C9BAC1A91A2D1ACB008C6C8A /* titanium.xcconfig */,
 				C9BD166A1A2685FA00495F42 /* hyperloop.xcodeproj */,
 				C9BD135E1A26827800495F42 /* urlSession */,
 				C9BD135D1A26827800495F42 /* Products */,
@@ -1763,7 +1763,7 @@
 /* Begin XCBuildConfiguration section */
 		C9BD136E1A26827800495F42 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9BAC1A31A2CFA81008C6C8A /* titanium.xcconfig */;
+			baseConfigurationReference = C9BAC1A91A2D1ACB008C6C8A /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -1801,8 +1801,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"\"$(PROJECT_FILE_PATH)/../hyperloop/lib/ios/jsc/templates/source\"",
-					"\"$(HOME)/Library/Application Support/Titanium/mobilesdk/osx/3.5.0/iphone/include\"",
-					"\"$(HOME)/Library/Application Support/Titanium/mobilesdk/osx/3.5.0/iphone/headers\"",
+					"\"$(TITANIUM_SDK)/iphone/include\"",
+					"\"$(TITANIUM_SDK)/iphone/headers\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1813,7 +1813,6 @@
 		};
 		C9BD136F1A26827800495F42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9BAC1A31A2CFA81008C6C8A /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
@@ -1847,8 +1846,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"\"$(PROJECT_FILE_PATH)/../hyperloop/lib/ios/jsc/templates/source\"",
-					"\"$(HOME)/Library/Application Support/Titanium/mobilesdk/osx/3.5.0/iphone/include\"",
-					"\"$(HOME)/Library/Application Support/Titanium/mobilesdk/osx/3.5.0/iphone/headers\"",
+					"\"$(TITANIUM_SDK)/iphone/include\"",
+					"\"$(TITANIUM_SDK)/iphone/headers\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1868,6 +1867,7 @@
 		};
 		C9BD13721A26827800495F42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BAC1A91A2D1ACB008C6C8A /* titanium.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
